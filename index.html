@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Lilita+One&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+   <!-- FIM GOOGLE FONTES -->
+ 
+    <link rel="stylesheet" href="style.css">
+    <title>Biblia</title>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <!-- <div class="hamburger" onclick="toggleMenu()">☰</div> -->
+    <!-- <div class="menu" id="menu">
+       
+    </div> -->
+    
+    <div class="container">
+        <input type="text" id="inputVersiculo" placeholder="Digite o versículo (ex: joao 3:16-2-10)">
+        <button id="btnBuscar" onclick="obterDados()">Buscar Versículo</button>
+        <p id="versiculo"></p>
+        <a href="index.html"><button>Voltar</button></a>
+       
+        <h2>Meditação:</h2>
+        <p id="versiculoaleatorio"></p>
+        <script src="app.js"></script><br><br>
+        
+      <a href="anotacao.html"> <img src="img/icons8-nota-64.png" alt="">
+        <br>
+        Anotações
+    </a>
+        
+        <footer>Versão: João Ferreira de Almeida </footer>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

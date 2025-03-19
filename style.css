@@ -21,6 +21,13 @@ body {
   font-style: normal;
 }
 
+textarea{
+    margin: 45px 0px;
+        width: 100%;
+        height: 150px;
+   
+}
+
 
 .container {
     background-color: #ffffff62;

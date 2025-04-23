@@ -26,6 +26,10 @@
     <div class="container">
         <input type="text" id="inputVersiculo" placeholder="Digite o versículo (ex: joao 3:16-2-10)">
         <button id="btnBuscar" onclick="obterDados()">Buscar Versículo</button>
+           <br><br>
+        <button onclick="lerVersiculo(document.getElementById('versiculo').innerText)">
+            ▶️ Play Versículo
+        </button>
         <p id="versiculo"></p>
         <a href="index.html"><button>Voltar</button></a>
        
@@ -33,9 +37,7 @@
         <p id="versiculoaleatorio"></p>
         <script src="app.js"></script><br><br>
 
-          <button onclick="lerVersiculo(document.getElementById('versiculo').innerText)">
-              ▶️ Play Versículo
-        </button>
+      
         
       <a href="anotacao.html"> <img src="img/icons8-nota-64.png" alt="">
         <br>

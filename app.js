@@ -140,6 +140,28 @@ window.onload = function() {
 // Chama a função para obter o versículo do dia ao carregar a página
 obterVersiculoDoDia();
 
+// Função para leitura por voz com play e pausa
+let synth = window.speechSynthesis;
+let utterance;
+let isSpeaking = false;
+
+function lerVersiculo(texto) {
+    if (!isSpeaking) {
+        utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = 'pt-BR'; // Define o idioma para português do Brasil
+        synth.speak(utterance);
+        isSpeaking = true;
+
+        utterance.onend = () => {
+            isSpeaking = false;
+        };
+    } else {
+        synth.cancel(); // Para a leitura
+        isSpeaking = false;
+    }
+}
+
+
 
 
 
